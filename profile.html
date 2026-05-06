@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Explore</title>
+  <title>Profile</title>
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&family=Playfair+Display&family=Montserrat&family=Poppins&family=Inter&family=Roboto+Mono&family=JetBrains+Mono&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="profile.css" />
   
 </head>
 
@@ -34,20 +34,12 @@
   
   <div id="body">
     <div id="toolbar">
-      <div id="tb-left">
+      <div id="tb-right">
         <i data-lucide="menu" id="menu"></i><span id="title">SPEDDY</span>
       </div>
-      <div id="tb-right">
-        <span id="search" data-lucide="search"></span> <span id="profile" data-lucide="user"></span>
+      <div id="tb-left">
+        <span data-lucide="search"></span>
       </div>
-    </div>
-    <div id="tabs">
-      <span id="tab1" class="seltab">All</span>
-      <span id="tab2">Self-contained</span><span id="tab3">Rooms</span>
-    </div>
-    
-    <div id="contents">
-      
     </div>
   </div>
   
@@ -56,5 +48,5 @@
   lucide.createIcons();
 </script>
 <script src="main.js"></script>
-<script src="home.js"></script>
+<script src="profile.js"></script>
 </html>

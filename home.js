@@ -1,6 +1,6 @@
 const list = id("contents");
 
-let contents = Array.from({ length: 10 }, (_, i) => {
+let contents = Array.from({ length: 6 }, (_, i) => {
   const id = i + 1;
   const isSelfCon = i % 2 === 0;
 
@@ -126,6 +126,54 @@ contents.forEach(itm =>{
   more.appendChild(kitchen);
   more.appendChild(rating);
   
+  const more2 = document.createElement('p');
+  more2.classList.add("more2");
+  
+  const price = document.createElement('p');
+  price.classList.add("price");
+  price.textContent = "₦"+ formatMoney(itm.price);
+  
+  const landmark = document.createElement('p');
+  landmark.classList.add("landmark");
+  landmark.textContent = " • " + itm.landmark;
+  
+  
+  const negotiable = document.createElement('p');
+  negotiable.classList.add("negotiable");
+  negotiable.textContent = itm.negotiable? " • Negotiable" : " • Non-negotiable";
+  
+  more2.appendChild(price);
+  more2.appendChild(negotiable);
+  more2.appendChild(landmark);
+  
+  const more3 = document.createElement('div');
+  more3.classList.add("more3");
+  
+  const view = document.createElement('button');
+  view.classList.add("view","button");
+  const view1 = document.createElement('span');
+  view1.classList.add("view1","fa-solid","fa-eye");
+  const view2 = document.createElement('span');
+  view2.classList.add("view2");
+  view2.textContent = "View Details";
+  
+  view.appendChild(view1);
+  view.appendChild(view2);
+  
+  const call = document.createElement('button');
+  call.classList.add("call","button2");
+  const call1 = document.createElement('span');
+  call1.classList.add("call1","fa-solid","fa-phone");
+  const call2 = document.createElement('span');
+  call2.classList.add("call2");
+  call2.textContent = "Call";
+  
+  call.appendChild(call1);
+  call.appendChild(call2);
+  
+  more3.appendChild(view);
+  more3.appendChild(call);
+  
   const thinEnd = document.createElement("div");
   thinEnd.classList.add("thin-end");
   
@@ -141,6 +189,8 @@ contents.forEach(itm =>{
   item3.appendChild(des);
   item3.appendChild(img);
   item3.appendChild(more);
+  item3.appendChild(more2);
+  item3.appendChild(more3);
   
   item2.appendChild(photo);
   item2.appendChild(item3);
