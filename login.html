@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Account</title>
+  <title>Log In</title>
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -32,39 +32,20 @@
   
   <div id="body">
     <div id="titles">
-      <h3 id="title">Create Account</h3>
-      <p id="sub-title">Provide these details to create a Speddy account.</p>
+      <h3 id="title">Log In</h3>
+      <p id="sub-title">Proceed to log in to your account using your username and password.</p>
     </div>
     
     <div id="form">
-      <div id="names">
-      <input type="text" class="input" id="fname" placeholder="Firstname" maxlength="15">
-      <input type="text" class="input" id="lname" placeholder="Lastname" maxlength="15">
-      </div>
-      <input type="tel" class="input fivemg" id="phone" placeholder="Phone number" maxlength="11">
-      <input type="email" class="input fivemg" id="email" placeholder="Email address" maxlength="50">
-      <div class="select">
-      <select id="gender">
-        <option value="" selected disabled>Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
-      </div>
-      <div class="select">
-       <select id="type">
-        <option value="" selected disabled>You are?</option>
-        <option value="landlord">Landlord</option>
-      <option value="agent">Agent</option>
-      <option value="student">Student tenant</option>
-      <option value="tenant">Other tenant</option>
-      </select>
-      </div>
+      <input type="text" class="input" id="username" placeholder="Username" maxlength="29">
+    
+      <input type="tel" class="input" id="password" placeholder="6-digit Password" maxlength="6">
       
       <div class="info">
-        <p><span class="fa-solid fa-circle-info"></span><span>Please ensure your details are correct. Anytime, our team may try to reach you through emails or phone calls for verification, if we encounter a problem reaching you multiple times, your account would be deleted.</span></p>
+        <p><span class="fa-solid fa-circle-info"></span><span>Your username is the 5-character entity assigned to you upon account creation.</span></p>
       </div>
       
-      <button class="button" type="submit" id="create"><span class="fa-solid fa-user-plus"></span><span>Create Account</span></button>
+      <button class="button" type="submit" id="login"><span class="fa-solid fa-user-plus"></span><span>Log In</span></button>
     </div>
   </div>
   
